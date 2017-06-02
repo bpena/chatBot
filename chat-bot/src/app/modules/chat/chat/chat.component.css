@@ -1,0 +1,38 @@
+.chat {
+  width: 300px;
+  border: 1px solid cadetblue;
+}
+
+.chat-messages {
+  padding: 5px;
+  overflow-wrap: break-word;
+  height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end
+}
+
+.chat-messages label {
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.chat md-input-container {
+  width: 100%;
+  margin: 0 0 -1em 0;
+  background-color: gainsboro;
+}
+
+:host /deep/ md-input-container .mat-input-wrapper {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+:host /deep/ md-input-container .mat-input-element {
+  line-height: 2em;
+}
+
+:host /deep/ md-input-container .mat-input-underline {
+  display: none;
+}

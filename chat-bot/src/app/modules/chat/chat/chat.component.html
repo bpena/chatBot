@@ -1,0 +1,9 @@
+<div class="chat">
+  <div class="chat-messages">
+    <label *ngFor="let msg of messages">{{ msg }}</label>
+  </div>
+  <md-input-container [floatPlaceholder]="auto">
+    <input mdInput name="componentProperty" [(ngModel)]="message" type="text"
+           placeholder="" (keypress)="onkeypress($event)">
+  </md-input-container>
+</div>
